@@ -7,8 +7,54 @@
   </head>
 
   <body>
+      <h1 id="title"> The people and mandate</h1>
 
-    <p>Hello World, we are software developers!</p>
+    <p id="description">This form is to enable access the products i offer!</p>
+
+    <form id="survey-form">
+
+      <label for="name" id="name-label">First name:</label>
+      <input type="text" id="name" name="name" required  placeholder="capitalized"><br>
+
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="email@gmail.com"><br>
+
+      <label for="number" id="number-label">Number:</label>
+        <input type="number" id="number" name="number" min="14" max="50"  placeholder="14-50"><br>
+              
+       <label for="cars">Choose a car:</label>
+
+        <select name="dropdown" id="dropdown">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select><br>
+
+
+      <input type="radio" name="season" value="winter" checked>Winter
+    <input type="radio" name="season" value="spring">Spring
+    <input type="radio" name="season" value="summer">Summer
+    <input type="radio" name="season" value="autumn">Autumn
+
+              <br>
+ <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1"> I have a bike</label><br>
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+<label for="vehicle2"> I have a car</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<label for="vehicle3"> I have a boat</label><br>
+
+
+<textarea id="w3review" name="w3review" rows="4" cols="50">
+ 
+  </textarea><br>
+
+  <input type="submit"  id="submit" value="Submit">
+
+
+
+      </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <script  src="js/index.js"></script>
